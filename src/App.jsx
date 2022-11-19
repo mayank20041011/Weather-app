@@ -7,10 +7,8 @@ import Section3 from "./Components/Section3/Section3";
 import Search from "./Components/Search/Search";
 function App() {
   const [data, setData] = useState(0);
-  const [city, setCity] = useState("india");
-  // const [loc, setLoc] = useState({ lati: null, longi: null });
-
-  useEffect(() => {
+  const [city, setCity] = useState("India");
+function fetchCity(){
     navigator.geolocation.getCurrentPosition((position) => {
       let lat = position.coords.latitude;
       let long = position.coords.longitude;
@@ -22,15 +20,16 @@ console.log({lat, long});
         response.json().then((data) => setCity(data?.address?.city))
       );
     });
-  }, []);
+
+}
   useEffect(() => {
-   
-    console.log(city);
-  }, [city]);
+fetchCity();    
+  }, []);
+ 
 
   useEffect(() => {
     if (typeof city == "undefined") {
-      setCity("India");
+    fetchCity();
     } else {
       fetch(
         `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?unitGroup=metric&include=days%2Ccurrent%2Chours&key=UT36N2ZZHCQ3BZRNQ2PK3MVQZ&contentType=json`
