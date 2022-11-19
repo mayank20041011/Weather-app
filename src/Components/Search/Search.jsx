@@ -54,7 +54,7 @@ function clickHandler (){
         
         {  filteredData.length!=0 && (<div className="dropdown">
   {filteredData.slice(0,8).map((value,key)=>{
-    return <div onClick={()=>{props.changeCity(value.name);setFilteredData([]);}}  className="filteritem">{value.name}<span>{value.country}</span></div>
+    return <div onClick={()=>{props.changeCity(value.name);setFilteredData([]);}}  className="filteritem">{value.name}<span>{" ",value.country}</span></div>
   })}
         </div>
 )}
