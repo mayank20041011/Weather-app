@@ -15,7 +15,7 @@ function App() {
       let lat = position.coords.latitude;
       let long = position.coords.longitude;
       // setLoc({ lati: lat, longi: long });
-
+console.log({lat, long});
       fetch(
         `https://us1.locationiq.com/v1/reverse.php?key=pk.dc64fb8cff756f2f79a1e29f127bbcf2&lat=${lat}&lon=${long}&format=json`
       ).then((response) =>
