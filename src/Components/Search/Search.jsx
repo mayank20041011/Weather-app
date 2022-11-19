@@ -1,6 +1,5 @@
 import React, { useRef} from "react";
 import "./Search.css";
-import data from "../../../data.json";
 import { useState, useEffect } from "react";
 
 
