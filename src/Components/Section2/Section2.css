@@ -1,0 +1,43 @@
+
+.br{
+    height: 10vh;
+    width: 2vw;
+    background: #ffffff60;
+    border-radius: 20px;
+    margin-left: 1vw;
+  }
+  
+  .section2{
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .S2prent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .temp{
+    color: white;
+    font-family: 'Roboto';
+  font-weight: 800;
+  font-size: 6rem;
+  margin-left: 5vw;
+  text-align: center;
+  }
+  
+
+  @media screen and (max-width: 425px) {
+    .section2{
+     flex-direction: column;
+    }
+    .br{
+      display: none;
+    }
+  
+    
+  }

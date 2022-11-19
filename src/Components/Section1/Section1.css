@@ -1,0 +1,83 @@
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: max-content;
+    width: 100%;
+    
+  }
+  
+  .otherDetail{
+    width: 30vw;
+    background: linear-gradient(202.02deg, rgba(217, 217, 217, 0.1) -166.5%, rgba(217, 217, 217, 0.029) 101.53%);
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    backdrop-filter: blur(31px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 19px;
+    text-align: center;
+    display: flex;
+    padding: 1vw;
+    justify-content: space-around;
+  }
+  
+  .br1{
+    height: 10vh;
+    width: 0.1vw;
+    background: #ffffff60;
+    border-radius: 20px;
+    margin-left: 1vw;
+  }
+  
+  .detail{
+    display: flex;
+    margin: auto;
+  }
+  
+
+  
+  .mainImg{
+  width: 12%;
+  }
+  
+  .text{
+    color: white;
+  }
+  
+  .location{
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: capitalize;
+  }
+  
+  .timedate{
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  
+  }
+
+  .details{
+font-weight: bolder;
+    margin-top: 1vh;
+  }
+
+  
+@media screen and (max-width: 425px) {
+  .section1{
+   flex-direction: column-reverse;
+  }
+.otherDetail{
+  width: max-content;
+
+}
+.mainImg{
+  width: 30%;
+  }
+  
+}
+

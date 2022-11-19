@@ -1,0 +1,16 @@
+
+  .s2{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .s2Img{
+    
+      width: 30%;
+    }
+    .s2tepm{
+      font-weight: bolder;
+      font-size: large;
+    }

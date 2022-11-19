@@ -1,0 +1,26 @@
+
+.section3{
+  display: flex;
+  height: max-content;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 72vw;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.S3br{
+  height: 10vh;
+  width: 2vw;
+  background: #22222260;
+  border-radius: 20px;
+}
